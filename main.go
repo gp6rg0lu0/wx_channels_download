@@ -31,7 +31,7 @@ func main() {
 			&cli.StringFlag{
 				Name:    "port",
 				Aliases: []string{"p"},
-				Value:   "8080",
+				Value:   "8888", // changed from 8080 to avoid conflicts with other local dev servers
 				Usage:   "Port for the proxy server to listen on",
 				EnvVars: []string{"WX_PROXY_PORT"},
 			},
