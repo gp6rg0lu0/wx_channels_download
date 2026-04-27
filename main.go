@@ -77,6 +77,8 @@ func runProxy(c *cli.Context) error {
 	fmt.Printf("Proxy listening on :%s\n", port)
 	fmt.Printf("Output directory: %s\n", outputDir)
 	fmt.Println("Configure your WeChat to use this proxy, then browse WeChat Channels to capture video URLs.")
+	// Reminder: after capturing, check the downloads folder — files are named by video ID
+	fmt.Println("Tip: press Ctrl+C to stop the proxy when done.")
 
 	server := NewProxyServer(port, outputDir, verbose)
 	return server.Start()
