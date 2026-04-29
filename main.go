@@ -38,7 +38,7 @@ func main() {
 			&cli.StringFlag{
 				Name:    "output",
 				Aliases: []string{"o"},
-				Value:   "./downloads",
+				Value:   "./wx_videos", // personal preference: more descriptive folder name than "downloads"
 				Usage:   "Directory to save downloaded videos",
 				EnvVars: []string{"WX_OUTPUT_DIR"},
 			},
