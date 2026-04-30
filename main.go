@@ -79,6 +79,8 @@ func runProxy(c *cli.Context) error {
 	fmt.Println("Configure your WeChat to use this proxy, then browse WeChat Channels to capture video URLs.")
 	// Reminder: after capturing, check the downloads folder — files are named by video ID
 	fmt.Println("Tip: press Ctrl+C to stop the proxy when done.")
+	// Note: you may need to trust the proxy's CA certificate on your phone first;
+	// see README for instructions on installing the cert.
 
 	server := NewProxyServer(port, outputDir, verbose)
 	return server.Start()
